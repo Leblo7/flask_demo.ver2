@@ -1,0 +1,23 @@
+/* font and background color */
+body {
+    font-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #2FFCFE;
+}
+
+/* gives tables only 1 outline */
+table {
+    border-collapse: collapse;
+}
+
+/* white backgrounds inside tables */
+tr {
+    background-color: #ffffff;
+}
+
+/* class for centering elements */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

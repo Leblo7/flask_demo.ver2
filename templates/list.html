@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>List of users</title>
+</head>
+<body class="center">
+    <!-- lists users and passwords -->
+    <table border="1" class="center">
+        <thead>
+            <td>User</td>
+            <td>Pwd</td>
+        </thead>
+
+        {% for row in rows %}
+        
+        <tr>
+            <td>{{row['username']}}</td>
+            <td>{{row['pwd']}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+    <a href="/">Go to homepage</a>
+</body>
+</html>
